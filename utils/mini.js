@@ -10,6 +10,7 @@
     console.debug("####", path ? true : false) // always true? why?
     // --------------------------------------------------------------------------
     parent[key] = _(namespace[key], path ? `${path}.${key}` : key, parent[key] || {});
+    // --- If the line below is replaced, it will meet the expectations.
     // parent[key] = _(namespace[key], Boolean(path) ? `${path}.${key}` : key, parent[key] || {});
   }
   return parent;
