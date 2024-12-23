@@ -1,3 +1,4 @@
+var root = {};
 // namespace builder
 (function _(namespace, path, parent) {
   // The expected output is "", "wrapper", "wrapper.data", "wrapper.data.key"
@@ -20,5 +21,6 @@
       key: {}
     },
   }
-}, '', {});
+}, "", root);
 
+export default root;
